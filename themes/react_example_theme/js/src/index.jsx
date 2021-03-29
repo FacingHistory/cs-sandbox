@@ -6,6 +6,6 @@ import Header from './components/Header';
 
 const Main = () => (
   <Header />
-)
+);
 
 ReactDOM.render(<Main />, document.getElementById('react-app'));
