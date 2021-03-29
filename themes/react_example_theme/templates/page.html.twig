@@ -77,19 +77,19 @@
       <div id="main" class="layout-main clearfix">
         {{ page.breadcrumb }}
         <main id="content" class="column main-content" role="main">
+          <div id="react-app" class="block">React app will load here.</div>
           <section class="section">
             <a id="main-content" tabindex="-1"></a>
             {{ page.content }}
           </section>
         </main>
-
+        {% if page.sidebar_first %}
           <div id="sidebar-first" class="column sidebar">
             <aside class="section" role="complementary">
-              <div id="react-app" class="block">React app will load here.</div>
               {{ page.sidebar_first }}
             </aside>
           </div>
-
+        {% endif %}
         {% if page.sidebar_second %}
           <div id="sidebar-second" class="column sidebar">
             <aside class="section" role="complementary">
