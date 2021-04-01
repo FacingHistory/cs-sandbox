@@ -9,6 +9,7 @@ const RecipesDisplay = () => {
       .then(res => res.json())
       .then(data => {
         setRecipeData([...recipeData, ...data])
+        debugger
         console.log("This is data: ", data)
         setTimeout(function(){ console.log("This is recipe data: ", recipeData) }, 2000)
         
