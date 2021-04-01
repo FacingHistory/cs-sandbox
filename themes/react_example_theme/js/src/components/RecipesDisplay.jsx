@@ -2,7 +2,7 @@ import React, {useEffect, useState } from "react";
 
 const RecipesDisplay = () => {
 
-  const [recipeData, setRecipeData] = useState([])
+  const [recipeData, setRecipeData] = useState("")
   
   useEffect (()=> {
     fetch("https://dev-cs-sandbox.pantheonsite.io/en/api/recipes?_format=json")
@@ -10,7 +10,7 @@ const RecipesDisplay = () => {
       .then(data => {
         debugger
         console.log("This is data: ", data[0]["title"][0]["value"])
-        setTimeout(function(){setRecipeData([...recipeData, ...data])},2000)
+        setTimeout(function(){setRecipeData(data[0]["title"][0]["value"])},2000)
         setTimeout(function(){ console.log("This is recipe data: ", recipeData) }, 3000)
         
       })
