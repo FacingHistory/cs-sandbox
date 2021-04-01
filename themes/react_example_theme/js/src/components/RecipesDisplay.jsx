@@ -17,7 +17,7 @@ const RecipesDisplay = () => {
   return (
     <div>
       <h2>Here is a list of recipes:</h2>
-      {/* <div>{data[0]}</div> */}
+      {recipeData ? <div>{recipeData}</div> : none}
     </div>
   )
 }
