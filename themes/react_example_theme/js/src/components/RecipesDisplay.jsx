@@ -10,8 +10,8 @@ const RecipesDisplay = () => {
       .then(data => {
         debugger
         console.log("This is data: ", data[0]["title"][0]["value"])
-        setTimeout(function(){setRecipeData(data[0]["title"][0]["value"])},2000)
-        setTimeout(function(){ console.log("This is recipe data: ", recipeData) }, 3000)
+        setTimeout(function(){setRecipeData(data[0]["title"][0]["value"])},5000)
+        setTimeout(function(){ console.log("This is recipe data: ", recipeData) }, 6000)
         
       })
   },[])
