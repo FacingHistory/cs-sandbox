@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from "react";
 
-const RecipesDisplay = () => {
+const RecipesContainer = () => {
 
   const [recipeData, setRecipeData] = useState([])
 
@@ -9,7 +9,7 @@ const RecipesDisplay = () => {
     .then(res => res.json())
     .then(data => setRecipeData(data))
   })
-
+  
   return (
     <div>
       <h2>Here is a list of recipes:</h2>
@@ -18,4 +18,4 @@ const RecipesDisplay = () => {
   )
 }
 
-export default RecipesDisplay;
+export default RecipesContainer;
