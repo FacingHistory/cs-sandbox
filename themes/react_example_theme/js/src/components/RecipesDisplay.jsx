@@ -6,12 +6,15 @@ const RecipesDisplay = () => {
 
     fetch("https://dev-cs-sandbox.pantheonsite.io/en/api/recipes?_format=json")
     .then(res => res.json())
-    .then(data => setRecipeData(data))
+    .then(data => {
+      setRecipeData(data)
+      console.log(recipeData)
+    })
 
   return (
     <div>
       <h2>Here is a list of recipes:</h2>
-      <div>{recipeData[0]}</div>
+      {/* <div>{recipeData[0]}</div> */}
     </div>
   )
 }
