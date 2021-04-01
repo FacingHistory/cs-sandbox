@@ -2,30 +2,29 @@
   "name": "react_example_theme",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "js/src/index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production webpack",
+    "build": "NODE_ENV=production webpack --mode=production",
     "build:dev": "webpack",
-    "start": "webpack --watch"
+    "start": "webpack --watch",
+    "start:hmr": "webpack-dev-server --hot --progress --colors"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@hot-loader/react-dom": "^17.0.1",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-hot-loader": "^4.13.0"
-  },
   "devDependencies": {
-    "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
-    "@babel/preset-react": "^7.13.13",
-    "babel-loader": "^8.2.2",
-    "webpack": "^5.28.0",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.19"
   }
 }
