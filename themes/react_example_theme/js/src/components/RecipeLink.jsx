@@ -1,10 +1,10 @@
 import React from "react";
 
 const RecipeLink = (props) => {
+  const title = props.recipeObj["title"][0]["value"]
+
   return (
-    <div>
-      <h2>React App!</h2>
-    </div>
+    <li>{title}</li>
   )
 }
 
