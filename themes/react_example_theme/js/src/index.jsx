@@ -2,7 +2,8 @@ import React,  { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
 /* Components */
-import Header from './components/Header';
+import Header from './components/Header.jsx';
+import RecipesDisplay from './components/RecipesDisplay.jsx'
 
 const Main = () => (
     <Fragment>
