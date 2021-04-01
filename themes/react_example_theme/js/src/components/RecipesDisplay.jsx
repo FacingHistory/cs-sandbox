@@ -4,11 +4,9 @@ const RecipesDisplay = () => {
 
   const [recipeData, setRecipeData] = useState([])
 
-  useEffect (() => {
     fetch("https://dev-cs-sandbox.pantheonsite.io/en/api/recipes?_format=json")
     .then(res => res.json())
     .then(data => setRecipeData(data))
-  })
 
   return (
     <div>
