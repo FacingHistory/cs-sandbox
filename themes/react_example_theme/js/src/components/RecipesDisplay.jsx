@@ -18,7 +18,7 @@ const RecipesDisplay = () => {
   return (
     <div>
       <h2>Here is a list of recipes:</h2>
-      {/* <div>{recipeData[0]}</div> */}
+      <div>{data[0]}</div>
     </div>
   )
 }
