@@ -11,7 +11,6 @@ const RecipesDisplay = () => {
   return (
     <div>
       <h2>Here is a list of recipes:</h2>
-
     </div>
   )
 }
