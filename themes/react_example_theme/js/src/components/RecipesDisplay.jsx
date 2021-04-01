@@ -12,7 +12,7 @@ const RecipesDisplay = () => {
         setRecipeData(data)
         console.log("This is recipeData: ", recipeData) 
       })
-  },[recipeData])
+  },[recipeData.length === 0])
 
   return (
     <div>
