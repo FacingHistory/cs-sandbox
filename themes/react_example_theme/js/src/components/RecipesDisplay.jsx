@@ -8,11 +8,9 @@ const RecipesDisplay = () => {
     fetch("https://dev-cs-sandbox.pantheonsite.io/en/api/recipes?_format=json")
       .then(res => res.json())
       .then(data => {
-        debugger
         console.log("This is data: ", data[0]["title"][0]["value"])
-        setTimeout(function(){setRecipeData(data[0]["title"][0]["value"])},5000)
-        setTimeout(function(){ console.log("This is recipe data: ", recipeData) }, 6000)
-        
+        setRecipeData(data[0]["title"][0]["value"])
+        console.log("This is recipe data: ", recipeData) 
       })
   },[])
 
