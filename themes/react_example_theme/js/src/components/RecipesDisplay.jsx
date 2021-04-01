@@ -17,7 +17,7 @@ const RecipesDisplay = () => {
   return (
     <div>
       <h2>Here is a list of recipes:</h2>
-      {recipeData !== [] ? <div>{recipeData[0]["title"][0]["value"]}</div> : <div>Loading...</div>}
+      {/* {recipeData !== [] ? <div>{recipeData[0]["title"][0]["value"]}</div> : <div>Loading...</div>} */}
     </div>
   )
 }
