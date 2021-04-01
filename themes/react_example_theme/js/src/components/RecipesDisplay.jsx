@@ -10,7 +10,7 @@ const RecipesDisplay = () => {
       .then(data => {
         setRecipeData([...recipeData, ...data])
         debugger
-        console.log("This is data: ", data)
+        console.log("This is data: ", data[0]["title"])
         setTimeout(function(){ console.log("This is recipe data: ", recipeData) }, 2000)
         
       })
