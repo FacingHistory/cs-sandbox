@@ -9,7 +9,8 @@ const RecipesDisplay = () => {
       .then(res => res.json())
       .then(data => {
         setRecipeData(data)
-        console.log(recipeData)
+        console.log("This is data: ", data)
+        console.log("This is recipe data: ", recipeData)
       })
   },[])
 
